@@ -4,120 +4,113 @@ const teamMembers = [
   {
     id: 1,
     name: "Sarah Johnson",
-    role: "Product Manager",
-    bio: "Leading product strategy and vision with 8+ years of experience in tech.",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+    role: "Chief Executive Officer",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
   },
   {
     id: 2,
     name: "Michael Chen",
-    role: "Senior Developer",
-    bio: "Full-stack developer passionate about building scalable applications.",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael"
+    role: "Chief Technology Officer",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
   },
   {
     id: 3,
     name: "Emily Rodriguez",
-    role: "UX Designer",
-    bio: "Creating beautiful and intuitive user experiences for modern web apps.",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emily"
+    role: "Head of Design",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
   },
   {
     id: 4,
-    name: "David Kim",
-    role: "DevOps Engineer",
-    bio: "Ensuring smooth deployments and maintaining robust infrastructure.",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=David"
+    name: "David Park",
+    role: "Lead Developer",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
   },
   {
     id: 5,
-    name: "Jessica Martinez",
-    role: "Marketing Lead",
-    bio: "Driving growth through strategic marketing and customer engagement.",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jessica"
+    name: "Jessica Williams",
+    role: "Marketing Director",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
   },
   {
     id: 6,
-    name: "Ryan Thompson",
-    role: "QA Engineer",
-    bio: "Maintaining quality standards and ensuring bug-free releases.",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ryan"
-  }
+    name: "James Anderson",
+    role: "Product Manager",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+  },
+  {
+    id: 7,
+    name: "Amanda Martinez",
+    role: "Senior Designer",
+    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
+  },
+  {
+    id: 8,
+    name: "Robert Taylor",
+    role: "Backend Engineer",
+    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
+  },
+  {
+    id: 9,
+    name: "Lisa Thompson",
+    role: "UX Researcher",
+    image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=400&fit=crop",
+  },
+  {
+    id: 10,
+    name: "Daniel Kim",
+    role: "Frontend Engineer",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+  },
+  {
+    id: 11,
+    name: "Sophie Brown",
+    role: "Content Strategist",
+    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop",
+  },
+  {
+    id: 12,
+    name: "Alex Turner",
+    role: "DevOps Engineer",
+    image: "https://images.unsplash.com/photo-1502767089025-6572583495f9?w=400&h=400&fit=crop",
+  },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
-      <main className="mx-auto w-full max-w-7xl px-6 py-16">
-        <div className="mb-16 text-center">
-          <Image
-            className="mx-auto mb-8 dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={120}
-            height={24}
-            priority
-          />
-          <h1 className="mb-4 text-4xl font-bold tracking-tight text-black dark:text-zinc-50">
-            Meet Our Team
-          </h1>
-          <p className="mx-auto max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
-            A diverse group of talented individuals working together to build amazing products.
-          </p>
-        </div>
+      <main className="w-full px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
+              Meet Our Team
+            </h1>
+            <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+              Talented individuals working together to create amazing experiences
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((member) => (
-            <div
-              key={member.id}
-              className="flex flex-col items-center rounded-2xl border border-zinc-200 bg-white p-8 text-center transition-all hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
-            >
-              <div className="mb-4 h-24 w-24 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
-                <Image
-                  src={member.avatar}
-                  alt={member.name}
-                  width={96}
-                  height={96}
-                  className="h-full w-full object-cover"
-                />
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {teamMembers.map((member) => (
+              <div
+                key={member.id}
+                className="group relative overflow-hidden rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md dark:bg-zinc-900"
+              >
+                <div className="mb-4 aspect-square overflow-hidden rounded-lg bg-zinc-100 dark:bg-zinc-800">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-black dark:text-zinc-50">
+                  {member.name}
+                </h3>
+                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  {member.role}
+                </p>
               </div>
-              <h3 className="mb-1 text-xl font-semibold text-black dark:text-zinc-50">
-                {member.name}
-              </h3>
-              <p className="mb-3 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-                {member.role}
-              </p>
-              <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                {member.bio}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16 flex flex-col items-center gap-4 text-base font-medium sm:flex-row sm:justify-center">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            ))}
+          </div>
         </div>
       </main>
     </div>
