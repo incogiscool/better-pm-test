@@ -81,9 +81,9 @@ export default function Home() {
       <main className="flex w-full flex-col items-center py-16 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-7xl">
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
+            <h2 className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
               Meet Our Team
-            </h1>
+            </h2>
             <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
               Talented individuals working together to create amazing products
             </p>
