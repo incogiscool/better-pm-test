@@ -77,14 +77,14 @@ const teamMembers = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center bg-green-50 font-sans dark:bg-green-950">
+    <div className="flex min-h-screen flex-col items-center bg-red-500 font-sans">
       <main className="flex w-full flex-col items-center py-16 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-7xl">
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold tracking-tight text-green-950 dark:text-green-50 sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Meet Our Team
             </h1>
-            <p className="mt-4 text-lg text-green-700 dark:text-green-300">
+            <p className="mt-4 text-lg text-red-100">
               Talented individuals working together to create amazing products
             </p>
           </div>
@@ -93,19 +93,19 @@ export default function Home() {
             {teamMembers.map((member) => (
               <div
                 key={member.id}
-                className="group relative flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:bg-green-50 dark:bg-green-900 dark:hover:bg-green-800"
+                className="group relative flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:bg-red-50"
               >
-                <div className="mb-4 h-24 w-24 overflow-hidden rounded-full bg-green-100 dark:bg-green-800">
+                <div className="mb-4 h-24 w-24 overflow-hidden rounded-full bg-red-100">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-green-950 dark:text-green-50">
+                <h3 className="text-lg font-semibold text-gray-900">
                   {member.name}
                 </h3>
-                <p className="mt-1 text-sm text-green-700 dark:text-green-300">
+                <p className="mt-1 text-sm text-gray-700">
                   {member.role}
                 </p>
               </div>
