@@ -77,14 +77,14 @@ const teamMembers = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center bg-red-50 font-sans dark:bg-red-950">
+    <div className="flex min-h-screen flex-col items-center bg-orange-50 font-sans dark:bg-orange-950">
       <main className="flex w-full flex-col items-center py-16 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-7xl">
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold tracking-tight text-red-950 dark:text-red-50 sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-orange-950 dark:text-orange-50 sm:text-5xl">
               Meet Our Team
             </h1>
-            <p className="mt-4 text-lg text-red-700 dark:text-red-300">
+            <p className="mt-4 text-lg text-orange-700 dark:text-orange-300">
               Talented individuals working together to create amazing products
             </p>
           </div>
@@ -93,19 +93,19 @@ export default function Home() {
             {teamMembers.map((member) => (
               <div
                 key={member.id}
-                className="group relative flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:bg-red-50 dark:bg-red-900 dark:hover:bg-red-800"
+                className="group relative flex flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-all hover:shadow-md hover:bg-orange-50 dark:bg-orange-900 dark:hover:bg-orange-800"
               >
-                <div className="mb-4 h-24 w-24 overflow-hidden rounded-full bg-red-100 dark:bg-red-800">
+                <div className="mb-4 h-24 w-24 overflow-hidden rounded-full bg-orange-100 dark:bg-orange-800">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-red-950 dark:text-red-50">
+                <h3 className="text-lg font-semibold text-orange-950 dark:text-orange-50">
                   {member.name}
                 </h3>
-                <p className="mt-1 text-sm text-red-700 dark:text-red-300">
+                <p className="mt-1 text-sm text-orange-700 dark:text-orange-300">
                   {member.role}
                 </p>
               </div>
